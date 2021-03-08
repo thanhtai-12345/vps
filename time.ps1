@@ -1,6 +1,6 @@
-$v = 360
-qb {
-Jevgr-Ubfg $v
-Fyrrc 60
-$v--
-} juvyr ($v -tg 0)
+$i = 360
+do {
+Write-Host $i
+Sleep 60
+$i--
+} while ($i -gt 0)
