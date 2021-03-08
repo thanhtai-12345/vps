@@ -1,3 +1,5 @@
-Frg-ArgSverjnyyCebsvyr -Cebsvyr Qbznva,Choyvp,Cevingr -Ranoyrq Snyfr
-& {$C = $rai:GRZC + '\puebzrerzbgrqrfxgbcubfg.zfv'; Vaibxr-JroErdhrfg 'uggcf://qy.tbbtyr.pbz/rqtrqy/puebzr-erzbgr-qrfxgbc/puebzrerzbgrqrfxgbcubfg.zfv' -BhgSvyr $C; Fgneg-Cebprff $C -Jnvg; Erzbir-Vgrz $C}
-& {$C = $rai:GRZC + '\puebzr_vafgnyyre.rkr'; Vaibxr-JroErdhrfg 'uggcf://qy.tbbtyr.pbz/puebzr/vafgnyy/yngrfg/puebzr_vafgnyyre.rkr' -BhgSvyr $C; Fgneg-Cebprff -SvyrCngu $C -Netf '/vafgnyy' -Ireo EhaNf -Jnvg; Erzbir-Vgrz $C}
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+& {$P = $env:TEMP + '\chromeremotedesktophost.msi'; Invoke-WebRequest 'https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi' -OutFile $P; Start-Process $P -Wait; Remove-Item $P}
+& {$P = $env:TEMP + '\chrome_installer.exe'; Invoke-WebRequest 'https://dl.google.com/chrome/install/latest/chrome_installer.exe' -OutFile $P; Start-Process -FilePath $P -Args '/install' -Verb RunAs -Wait; Remove-Item $P}Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+& {$P = $env:TEMP + '\chromeremotedesktophost.msi'; Invoke-WebRequest 'https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi' -OutFile $P; Start-Process $P -Wait; Remove-Item $P}
+& {$P = $env:TEMP + '\chrome_installer.exe'; Invoke-WebRequest 'https://dl.google.com/chrome/install/latest/chrome_installer.exe' -OutFile $P; Start-Process -FilePath $P -Args '/install' -Verb RunAs -Wait; Remove-Item $P}
